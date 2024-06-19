@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 // Load environment variables from config.env file
 dotenv.config({ path: 'config.env' });
+
 const app = express();
 
 // Middleware for logging in development mode
@@ -31,8 +32,8 @@ mongoose.connect(process.env.DB_URI)
         process.exit(1); // Exit process with failure
     });
 
-
 // Start the server
 app.listen(PORT, () => {
     console.log(`App Running on port ${PORT}`);
 });
+
