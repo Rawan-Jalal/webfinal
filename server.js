@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 // Load environment variables from config.env file
 dotenv.config({ path: 'config.env' });
-
 const app = express();
 
 // Middleware for logging in development mode
